@@ -232,7 +232,7 @@ Sementara itu, jumlah ulasan dengan sentimen negatif dan netral relatif lebih se
 
 Selain menggunakan diagram batang, distribusi sentimen juga divisualisasikan menggunakan diagram lingkaran (pie chart/donut chart) untuk melihat persentase masing-masing kelas sentimen.
 
-> *<img width="456" height="417" alt="image" src="https://github.com/user-attachments/assets/b7a1a3fa-c6c7-45d5-bb13-a3a7816eefcf" />*  
+> **  
 > *Gambar 4.2 Diagram Donut Distribusi Sentimen*
 
 Visualisasi tersebut menunjukkan proporsi masing-masing kelas sentimen dalam dataset. Sentimen positif memiliki persentase terbesar, sedangkan sentimen netral memiliki jumlah paling sedikit.

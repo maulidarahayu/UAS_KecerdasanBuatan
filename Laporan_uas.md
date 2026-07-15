@@ -232,10 +232,10 @@ Sementara itu, jumlah ulasan dengan sentimen negatif dan netral relatif lebih se
 
 Selain menggunakan diagram batang, distribusi sentimen juga divisualisasikan menggunakan diagram lingkaran (pie chart/donut chart) untuk melihat persentase masing-masing kelas sentimen.
 
-> **  
+> *<img width="439" height="370" alt="image" src="https://github.com/user-attachments/assets/63a8b49c-4536-4a38-887b-dde94f15c86c" />*  
 > *Gambar 4.2 Diagram Donut Distribusi Sentimen*
 
-Visualisasi tersebut menunjukkan proporsi masing-masing kelas sentimen dalam dataset. Sentimen positif memiliki persentase terbesar, sedangkan sentimen netral memiliki jumlah paling sedikit.
+Visualisasi tersebut menunjukkan proporsi masing-masing kelas sentimen dalam dataset. Sentimen Netral memiliki persentase terbesar, lalu disusul dengan Sentimen Positif, setelah itu sentimen negatif memiliki jumlah paling sedikit.
 
 Visualisasi ini membantu memberikan gambaran umum mengenai kondisi dataset sebelum dilakukan proses pelatihan model.
 
@@ -245,8 +245,7 @@ Visualisasi ini membantu memberikan gambaran umum mengenai kondisi dataset sebel
 
 Distribusi rating dilakukan untuk mengetahui banyaknya ulasan berdasarkan rating yang diberikan pengguna pada Google Play Store.
 
-> *<img width="582" height="381" alt="image" src="https://github.com/user-attachments/assets/d4275803-6880-449d-b89c-116e99c3e317" />
-*  
+> *<img width="582" height="381" alt="image" src="https://github.com/user-attachments/assets/d4275803-6880-449d-b89c-116e99c3e317" />*  
 > *Gambar 4.3 Grafik Distribusi Rating*
 
 Berdasarkan hasil visualisasi, rating 5 merupakan rating yang paling banyak diberikan oleh pengguna. Hal tersebut menunjukkan bahwa sebagian besar pengguna merasa puas terhadap layanan aplikasi Wondr by BNI.
@@ -259,8 +258,7 @@ Sebaliknya, rating 1 dan 2 memiliki jumlah yang lebih sedikit, namun tetap membe
 
 Analisis panjang ulasan dilakukan untuk mengetahui karakteristik teks yang digunakan oleh pengguna dalam memberikan ulasan.
 
-> *<img width="617" height="376" alt="image" src="https://github.com/user-attachments/assets/1619ae50-321b-4d31-b1e1-f3a74130b526" />
-*  
+> *<img width="581" height="371" alt="image" src="https://github.com/user-attachments/assets/b521e834-14a0-410a-8567-6019d78fa872" />*  
 > *Gambar 4.4 Histogram Panjang Ulasan*
 
 Hasil visualisasi menunjukkan bahwa sebagian besar pengguna menuliskan ulasan dengan panjang kalimat yang relatif pendek hingga sedang. Namun demikian, terdapat beberapa ulasan yang memiliki jumlah kata cukup panjang sehingga proses preprocessing diperlukan untuk menyeragamkan representasi data.
@@ -271,10 +269,8 @@ Hasil visualisasi menunjukkan bahwa sebagian besar pengguna menuliskan ulasan de
 
 Analisis frekuensi kata dilakukan untuk mengetahui kata-kata yang paling sering muncul setelah proses preprocessing.
 
-> *<img width="728" height="426" alt="image" src="https://github.com/user-attachments/assets/2e376929-acdd-487c-bfc4-d6f0e6b61d4d" />
-*
-> *<img width="871" height="464" alt="image" src="https://github.com/user-attachments/assets/aa353dd6-84bd-46fc-9c75-1e313a5c2f46" />
-* 
+> *<img width="728" height="426" alt="image" src="https://github.com/user-attachments/assets/2e376929-acdd-487c-bfc4-d6f0e6b61d4d" />*
+> *<img width="871" height="464" alt="image" src="https://github.com/user-attachments/assets/aa353dd6-84bd-46fc-9c75-1e313a5c2f46" />* 
 > *Gambar 4.5 Top 20 Kata Terbanyak*
 
 Berdasarkan hasil visualisasi, beberapa kata muncul dengan frekuensi yang tinggi pada dataset. Kata-kata tersebut menggambarkan topik utama yang sering dibahas oleh pengguna, seperti kualitas aplikasi, proses login, transaksi, maupun performa sistem.
@@ -338,9 +334,7 @@ Pada tahap ini dilakukan pengecekan terhadap:
 
 Apabila ditemukan data yang kosong atau duplikat, maka data tersebut dihapus agar tidak mempengaruhi proses pelatihan model.
 
-> *<img width="283" height="379" alt="image" src="https://github.com/user-attachments/assets/28817700-54ea-4a3a-8947-9127c76641db" />
-*
->
+> *<img width="283" height="379" alt="image" src="https://github.com/user-attachments/assets/28817700-54ea-4a3a-8947-9127c76641db" />*
 > *Gambar 5.1 Hasil pengecekan missing value dan data duplikat.*
 
 ---
@@ -460,8 +454,7 @@ Aturan pelabelan yang digunakan adalah sebagai berikut.
 | 3 | Netral |
 | 1 – 2 | Negatif |
 
-> *<img width="434" height="227" alt="image" src="https://github.com/user-attachments/assets/a306267f-10a5-493a-8986-c0afdeed6430" />
-*
+> *<img width="434" height="227" alt="image" src="https://github.com/user-attachments/assets/a306267f-10a5-493a-8986-c0afdeed6430" />*
 
 Metode pelabelan ini dipilih karena rating dianggap mampu merepresentasikan kepuasan pengguna terhadap aplikasi.
 
@@ -619,18 +612,14 @@ Parameter pelatihan model ditunjukkan pada tabel berikut.
 
 EarlyStopping digunakan untuk menghentikan proses pelatihan apabila model sudah tidak mengalami peningkatan performa sehingga dapat mengurangi risiko overfitting.
 
-> *<img width="1142" height="268" alt="image" src="https://github.com/user-attachments/assets/1b73fec1-780d-4ad0-87b1-ff0f7d6edeac" />
-*
+> *<img width="1142" height="268" alt="image" src="https://github.com/user-attachments/assets/1b73fec1-780d-4ad0-87b1-ff0f7d6edeac" />*
 ---
 
 ### Hasil Pelatihan
 
 Setelah proses training selesai, model menghasilkan nilai Accuracy dan Loss pada data latih maupun data validasi.
 
-> *<img width="1209" height="350" alt="image" src="https://github.com/user-attachments/assets/310b7301-e866-446a-8038-0a9d8b381d0e" />
-*
-
-*
+> *<img width="1209" height="350" alt="image" src="https://github.com/user-attachments/assets/310b7301-e866-446a-8038-0a9d8b381d0e" />*
 
 Grafik tersebut menunjukkan perubahan nilai Accuracy dan Loss selama proses pelatihan sehingga dapat digunakan untuk mengetahui apakah model mengalami overfitting atau underfitting.
 
@@ -677,10 +666,9 @@ Setelah proses training selesai, model SVM berhasil melakukan klasifikasi sentim
 
 Model kemudian dievaluasi menggunakan Accuracy, Precision, Recall, F1-Score, dan Confusion Matrix.
 
-> *<img width="430" height="58" alt="image" src="https://github.com/user-attachments/assets/c6dfbb8a-1ed7-4b77-b5c3-c21d1231703c" />
-*
-> *<img width="430" height="58" alt="image" src="https://github.com/user-attachments/assets/d62d85e7-7db4-48cb-850d-80ceb9d19882" />
-*
+> *<img width="416" height="132" alt="image" src="https://github.com/user-attachments/assets/294eada3-66c7-406f-a21c-4f7a1642737e" />*
+> *<img width="410" height="370" alt="image" src="https://github.com/user-attachments/assets/4ce7156f-4fb8-47ef-93fe-5e1b81d6560f" />*
+> *<img width="232" height="159" alt="image" src="https://github.com/user-attachments/assets/741a07f2-54e6-48f5-9c2b-0575b942d1ac" />*
 ---
 
 ## 6.3 Perbandingan Model
@@ -696,6 +684,7 @@ Metrik evaluasi yang digunakan meliputi:
 
 Hasil evaluasi kedua model kemudian ditampilkan dalam bentuk tabel dan grafik.
 
+> *<img width="449" height="195" alt="image" src="https://github.com/user-attachments/assets/51fbdfe9-745a-4eca-b1c4-f77e04d02922" />*
 > *<img width="560" height="377" alt="image" src="https://github.com/user-attachments/assets/5ce540d1-84a4-40a0-a7c8-a2bf9dc7d7d6" />
 *
 
@@ -849,7 +838,8 @@ Perbandingan dilakukan menggunakan empat metrik utama, yaitu Accuracy, Precision
 | Recall | ... | ... |
 | F1-Score | ... | ... |
 
-> **Isi tabel sesuai hasil evaluasi dari notebook.**
+> *<img width="471" height="296" alt="image" src="https://github.com/user-attachments/assets/956efdc4-f041-4b8f-96f5-b7d268962351" />
+*
 
 ---
 
@@ -857,7 +847,7 @@ Perbandingan dilakukan menggunakan empat metrik utama, yaitu Accuracy, Precision
 
 Selain menggunakan tabel, hasil evaluasi divisualisasikan menggunakan grafik batang agar perbedaan performa kedua algoritma dapat terlihat dengan lebih jelas.
 
-> **Tambahkan grafik perbandingan LSTM dan SVM di sini.**
+> *<img width="623" height="383" alt="image" src="https://github.com/user-attachments/assets/b76566c6-9892-4286-a95a-ddd636275c1f" />*
 
 ---
 
@@ -1035,19 +1025,6 @@ Lampiran evaluasi model meliputi:
 
 ---
 
-## Lampiran F. Implementasi Sistem
-
-Lampiran ini berisi dokumentasi implementasi sistem analisis sentimen menggunakan Streamlit.
-
-Dokumentasi meliputi:
-
-- Halaman Beranda
-- Halaman Prediksi Sentimen
-- Hasil Prediksi Sentimen
-- Visualisasi Hasil Analisis
-- Informasi Model Terbaik
-
-> Tambahkan screenshot tampilan aplikasi Streamlit.
 
 
   

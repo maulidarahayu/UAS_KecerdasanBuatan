@@ -869,7 +869,13 @@ Berdasarkan hasil penelitian, beberapa pengembangan yang dapat dilakukan pada pe
 # 9. Referensi
 
 Berikut merupakan referensi yang digunakan pada penelitian ini.
-> 
+> 1. Zandroto, Y. Y., Vitianingsih, A. V., Maukar, A. L., Hikmawati, N. K., & Hamidan, R. (2025). Sentiment analysis of BCA Mobile app reviews using K-Nearest Neighbour and Support Vector Machine algorithm. Indonesian Journal of Artificial Intelligence and Data Mining, 8(2), 448–458. https://doi.org/10.24014/ijaidm.v8i2.37773
+> 2. Pratama, J. A. (2023). Penerapan metode Support Vector Machine dan Naïve Bayes pada klasifikasi sentimen review aplikasi WhatsApp. Jurnal Komputer dan Informatika, 18(1), 38–45.
+> 3. Santika, B., & Hidayah, A. K. (2025). Implementation of Support Vector Machine for sentiment analysis on Blibli app reviews on Play Store. Jurnal Vocational Teknik Elektronika dan Informatika, 13(2). https://doi.org/10.24036/voteteknika.v13i2.133666
+> 4. Rizkiyanto, M. D., Purbolaksono, M. D., & Astuti, W. (2024). Sentiment analysis classification on PLN Mobile application reviews using Random Forest method and TF-IDF feature extraction. INTEK Jurnal Penelitian, 11(1), 37–43. https://doi.org/10.31963/intek.v11i1.4774
+> 5. Damayanti, E., Vitianingsih, A. V., Kacung, S., Cahyono, D., & Maukar, A. L. (2024). Sentiment analysis of Alfagift application user reviews using Long Short-Term Memory (LSTM) and Support Vector Machine (SVM) methods. DECODE: Jurnal Pendidikan Teknologi Informasi, 4(2), 509–521. https://doi.org/10.51454/decode.v4i2.478
+> 6. Indonesian sentiment analysis towards MyPertamina application reviews by utilizing machine learning algorithms. (2022).
+> 7. Analisis sentimen Grab Indonesia pada ulasan Google Play Store menggunakan algoritma Naïve Bayes dan Support Vector Machine. (2025).
 
 
 # 10. Lampiran

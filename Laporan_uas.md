@@ -685,8 +685,7 @@ Metrik evaluasi yang digunakan meliputi:
 Hasil evaluasi kedua model kemudian ditampilkan dalam bentuk tabel dan grafik.
 
 > *<img width="449" height="195" alt="image" src="https://github.com/user-attachments/assets/51fbdfe9-745a-4eca-b1c4-f77e04d02922" />*
-> *<img width="560" height="377" alt="image" src="https://github.com/user-attachments/assets/5ce540d1-84a4-40a0-a7c8-a2bf9dc7d7d6" />
-*
+> *<img width="560" height="377" alt="image" src="https://github.com/user-attachments/assets/5ce540d1-84a4-40a0-a7c8-a2bf9dc7d7d6" />*
 
 ---
 
@@ -711,75 +710,25 @@ Evaluasi dilakukan menggunakan beberapa metrik, yaitu **Accuracy**, **Precision*
 
 Model LSTM dievaluasi menggunakan data uji yang tidak pernah digunakan selama proses pelatihan. Hasil evaluasi diperoleh dari fungsi `model.evaluate()` serta `classification_report()` pada library Scikit-Learn.
 
-### Accuracy
+### Accuracy, Precision, Recall, F1-Score
 
-Accuracy merupakan persentase jumlah prediksi yang benar dibandingkan seluruh data uji.
+Accuracy merupakan persentase jumlah prediksi yang benar dibandingkan seluruh data uji. Precision digunakan untuk mengukur tingkat ketepatan model dalam memberikan prediksi terhadap suatu kelas.Recall digunakan untuk mengetahui kemampuan model dalam menemukan seluruh data yang benar pada setiap kelas. F1-Score merupakan rata-rata harmonik antara Precision dan Recall.
 
-**Rumus Accuracy**
-
-\[
-Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
-\]
-
-> **Tambahkan hasil Accuracy LSTM dari notebook di sini.**
-
----
-
-### Precision
-
-Precision digunakan untuk mengukur tingkat ketepatan model dalam memberikan prediksi terhadap suatu kelas.
-
-**Rumus Precision**
-
-\[
-Precision=\frac{TP}{TP+FP}
-\]
-
-> **Tambahkan hasil Precision LSTM di sini.**
-
----
-
-### Recall
-
-Recall digunakan untuk mengetahui kemampuan model dalam menemukan seluruh data yang benar pada setiap kelas.
-
-**Rumus Recall**
-
-\[
-Recall=\frac{TP}{TP+FN}
-\]
-
-> **Tambahkan hasil Recall LSTM di sini.**
-
----
-
-### F1-Score
-
-F1-Score merupakan rata-rata harmonik antara Precision dan Recall.
-
-**Rumus F1-Score**
-
-\[
-F1=2\times\frac{Precision\times Recall}{Precision+Recall}
-\]
-
-> **Tambahkan hasil F1-Score LSTM di sini.**
-
+> *<img width="801" height="454" alt="image" src="https://github.com/user-attachments/assets/2c90dd9f-0aa1-4994-ba1e-b3256a556c32" />*
 ---
 
 ### Classification Report
 
 Classification Report menampilkan nilai Precision, Recall, F1-Score, dan Support pada masing-masing kelas sentimen.
 
-> **Tambahkan screenshot Classification Report LSTM di sini.**
-
+> *<img width="447" height="228" alt="image" src="https://github.com/user-attachments/assets/5586ba91-5116-4708-b4a5-7e95e7c33fc3" />*
 ---
 
 ### Confusion Matrix
 
 Confusion Matrix digunakan untuk melihat jumlah prediksi yang benar maupun salah pada setiap kelas sentimen.
 
-> **Tambahkan gambar Confusion Matrix LSTM di sini.**
+> *<img width="447" height="428" alt="image" src="https://github.com/user-attachments/assets/3ef3f6b1-68f0-43d9-8d27-f9e6fae324b9" />*
 
 Berdasarkan Confusion Matrix dapat diketahui bahwa sebagian besar data berhasil diklasifikasikan dengan benar oleh model LSTM. Namun masih terdapat beberapa data yang salah diklasifikasikan terutama pada kelas yang memiliki jumlah data lebih sedikit.
 
@@ -789,39 +738,21 @@ Berdasarkan Confusion Matrix dapat diketahui bahwa sebagian besar data berhasil 
 
 Model Support Vector Machine dievaluasi menggunakan data uji yang sama sehingga hasil evaluasi dapat dibandingkan secara objektif dengan model LSTM.
 
-### Accuracy
+### Accuracy, Precision, Recall, F1-Score
 
-> **Tambahkan hasil Accuracy SVM di sini.**
-
----
-
-### Precision
-
-> **Tambahkan hasil Precision SVM di sini.**
-
----
-
-### Recall
-
-> **Tambahkan hasil Recall SVM di sini.**
-
----
-
-### F1-Score
-
-> **Tambahkan hasil F1-Score SVM di sini.**
+> *<img width="898" height="507" alt="image" src="https://github.com/user-attachments/assets/58f429b8-1790-4a2d-9de3-55287b44a3bd" />*
 
 ---
 
 ### Classification Report
 
-> **Tambahkan screenshot Classification Report SVM di sini.**
+> *<img width="391" height="130" alt="image" src="https://github.com/user-attachments/assets/2ff42faa-b2f4-4e63-8b10-0871946caec7" />*
 
 ---
 
 ### Confusion Matrix
 
-> **Tambahkan gambar Confusion Matrix SVM di sini.**
+> *<img width="403" height="360" alt="image" src="https://github.com/user-attachments/assets/9647fd6a-e8a2-4474-aa9f-951daca5b4a0" />*
 
 Berdasarkan hasil evaluasi, model SVM mampu melakukan klasifikasi sentimen dengan baik menggunakan representasi fitur TF-IDF. Nilai evaluasi yang diperoleh kemudian dibandingkan dengan model LSTM untuk mengetahui algoritma yang memiliki performa terbaik.
 
@@ -937,21 +868,8 @@ Berdasarkan hasil penelitian, beberapa pengembangan yang dapat dilakukan pada pe
 
 # 9. Referensi
 
-Berikut merupakan referensi yang digunakan pada penelitian ini dengan format **APA Style (7th Edition)**.
-
-Cortes, C., & Vapnik, V. (1995). *Support-vector networks*. Machine Learning, 20(3), 273–297.
-
-Fitriani, P., dkk. (2023). *Analisis Sentimen Ulasan Aplikasi Mobile Menggunakan Long Short-Term Memory (LSTM).* Jurnal Teknologi Informasi dan Ilmu Komputer.
-
-Hochreiter, S., & Schmidhuber, J. (1997). *Long Short-Term Memory*. Neural Computation, 9(8), 1735–1780.
-
-Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to Information Retrieval*. Cambridge University Press.
-
-Prasetyo, A., dkk. (2022). *Analisis Sentimen Ulasan Aplikasi Menggunakan Support Vector Machine dan TF-IDF*. Jurnal Informatika.
-
-Scikit-learn Developers. (2025). *Scikit-learn Documentation*. https://scikit-learn.org
-
-TensorFlow Developers. (2025). *TensorFlow Documentation*. https://www.tensorflow.org
+Berikut merupakan referensi yang digunakan pada penelitian ini.
+> 
 
 
 # 10. Lampiran
@@ -964,8 +882,8 @@ Lampiran berisi dokumentasi proses penelitian yang mendukung hasil analisis sert
 - Jumlah data yang digunakan dalam penelitian.
 - Contoh beberapa data ulasan pengguna.
 
-> Tambahkan screenshot dataset atau tampilkan beberapa baris pertama dataset.
-
+> <img width="447" height="356" alt="image" src="https://github.com/user-attachments/assets/342c900a-2e38-4f8d-b88a-f2ce91d3a8a5" /> 
+> <img width="1207" height="228" alt="image" src="https://github.com/user-attachments/assets/ca64c0e7-d5a9-4626-8b9f-f007ee600d04" />
 ---
 
 ## Lampiran B. Hasil Preprocessing
@@ -980,7 +898,14 @@ Tahapan preprocessing yang dilakukan meliputi:
 - Stemming
 - Pelabelan Sentimen
 
-> Tambahkan screenshot hasil setiap tahapan preprocessing.
+> <img width="301" height="377" alt="image" src="https://github.com/user-attachments/assets/e32a6711-c003-4039-afd4-f37a6624f2c1" />
+>  <img width="528" height="193" alt="image" src="https://github.com/user-attachments/assets/987dc3c1-299b-4dde-826b-0efb393ad5f2" />
+> <img width="517" height="198" alt="image" src="https://github.com/user-attachments/assets/27dbf622-58e9-4af0-9228-a1731c8b47fa" />
+> <img width="506" height="192" alt="image" src="https://github.com/user-attachments/assets/c183f208-f8a7-429d-ab93-a2802d23bc79" />
+> <img width="527" height="184" alt="image" src="https://github.com/user-attachments/assets/de63dca3-1c33-4145-896a-c983541c5a31" />
+> <img width="519" height="196" alt="image" src="https://github.com/user-attachments/assets/b7388fc3-a981-4a4b-89db-a74fade2c85e" />
+> <img width="495" height="353" alt="image" src="https://github.com/user-attachments/assets/ebf5b42a-91e3-41cd-a7f6-c021f536a688" />
+
 
 ---
 
@@ -994,7 +919,11 @@ Lampiran ini berisi visualisasi hasil eksplorasi data, seperti:
 - Top Frequent Words
 - WordCloud
 
-> Tambahkan seluruh grafik hasil EDA.
+> <img width="442" height="434" alt="image" src="https://github.com/user-attachments/assets/28e17340-ee46-480d-9874-1fbdc3a4f50e" />
+> <img width="530" height="374" alt="image" src="https://github.com/user-attachments/assets/e18cb9f8-f861-495f-b41a-5c17dbb9bff6" />
+> <img width="594" height="375" alt="image" src="https://github.com/user-attachments/assets/769cf8a1-a9ba-4466-8648-4a13c6ff1b9b" />
+> <img width="727" height="433" alt="image" src="https://github.com/user-attachments/assets/b5dbc2cd-d63d-4722-adf6-37f9970d25de" />
+> <img width="886" height="476" alt="image" src="https://github.com/user-attachments/assets/ba29a542-6c78-4f75-9b81-f2392c251c62" />
 
 ---
 
@@ -1008,7 +937,8 @@ Lampiran ini berisi dokumentasi proses pelatihan model, antara lain:
 - Grafik Training Loss
 - Grafik Validation Loss
 
-> Tambahkan screenshot hasil training model.
+> <img width="995" height="397" alt="image" src="https://github.com/user-attachments/assets/9af20f42-3edd-4e87-b50e-eba4e1470c43" />
+
 
 ---
 
@@ -1024,9 +954,3 @@ Lampiran evaluasi model meliputi:
 - Grafik Perbandingan LSTM dan SVM
 
 ---
-
-
-
-  
-
-
